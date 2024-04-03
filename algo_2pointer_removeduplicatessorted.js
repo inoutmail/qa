@@ -23,8 +23,10 @@ var removeDuplicate= function(nums) {
             nums[current]=nums[next];
         }
             next+=1;   
+        console.log(current,next);
+        console.log(nums);
     }
-
+ 
     return nums.splice(0,current+1);
 };
 
