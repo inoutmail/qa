@@ -1,3 +1,4 @@
+
 function mergeIntervals(intervals, newInterval) {
     //is time slot available ?
     //Sort

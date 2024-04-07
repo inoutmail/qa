@@ -6,12 +6,8 @@ var maxSubArray = function(nums){
     let max = -Infinity
     let temp = 0
     for(let i = 0; i<nums.length;i++){
-        console.log('oi',nums[i]);
         temp = Math.max(nums[i], nums[i] + temp);
-        console.log('temp',temp);
-        console.log('old max',max);
         max = temp > max ? temp : max;
-        console.log('new max', max);
     }
     return max
 };
